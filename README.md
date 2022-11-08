@@ -39,3 +39,9 @@ In case anything goes wrong you can use environment variable DEBUG:
 ```sh
 docker run --rm --env="DEBUG=true" -env="MACADDRESS=44:38:39:ff:ef:57" companytool
 ```
+
+# Security
+
+Note: This tool has been created according to specific instructions. However a better secure approach should be using the tool locally and create a rest api as a service.
+By creating the API as a service, credentials can be store in the cloud securely and only people using a VPN can only access this tool API.
+Also I have created on the past API that are managed by token only provided by authentication service like cognito, which can work in an internal active directory.
